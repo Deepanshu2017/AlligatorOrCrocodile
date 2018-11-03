@@ -36,7 +36,7 @@ data = ImageDataBunch.single_from_classes(
     classes,
     tfms=get_transforms(),
     size=224,
-)
+).normalize(imagenet_stats)
 
 # Create a learner and load the weights
 learn = create_cnn(data, models.resnet34)
