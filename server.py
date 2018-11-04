@@ -4,6 +4,7 @@ from fastai.vision import (
     ImageDataBunch,
     create_cnn,
     open_image,
+    imagenet_stats,
     get_transforms,
     models,
 )
